@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: multi-db-connection
+  datasource:
+    url: jdbc:postgresql://localhost:5433/db1
+    username: admin
+    password: admin
+    driver-class-name: org.postgresql.Driver
+
+app:
+  datasource:
+    db2:
+      url: jdbc:postgresql://localhost:5433/db2
+      username: admin
+      password: admin
+      driver-class-name: org.postgresql.Driver
+
+server:
+  port: 8085
